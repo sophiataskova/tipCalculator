@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         let defaults = UserDefaults.standard
         let defaultTip = defaults.integer(forKey: "default_tip")
         tipControl.selectedSegmentIndex = defaultTip
+        billField.becomeFirstResponder()
         
         let defaultBill = defaults.double(forKey: "bill")
         billField.text = String(defaultBill)
